@@ -21,7 +21,7 @@
     } else { els.forEach(show); }
   }
 
-  /* ---- Word of the Day: speak + open video ---- */
+  /* ---- Word of the Day: speak (Web Speech) + play video INLINE ---- */
   function speak(text){
     if(!('speechSynthesis' in window)){return;}
     try{
@@ -33,6 +33,24 @@
   }
   document.addEventListener('click',function(ev){
     var b=ev.target.closest('[data-speak]');
-    if(b){ speak(b.getAttribute('data-speak')); }
+    if(b){ speak(b.getAttribute('data-speak')); return; }
+
+    /* Play the video INLINE inside the card — never pop out to YouTube */
+    var v=ev.target.closest('[data-vid]');
+    if(v){
+      ev.preventDefault();
+      var card=v.closest('.vc');
+      var box=card && card.querySelector('.vc__embed');
+      if(box && !box.dataset.loaded){
+        var id=v.getAttribute('data-vid');
+        box.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0&playsinline=1" title="Word of the Day video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        box.dataset.loaded='1';
+        box.classList.add('on');
+        v.textContent='▶ Playing below';
+        v.classList.add('is-playing');
+      } else if(box){
+        box.scrollIntoView({behavior:'smooth',block:'nearest'});
+      }
+    }
   });
 })();
