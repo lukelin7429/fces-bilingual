@@ -24,7 +24,7 @@ def topbar(prefix, active):
       <a href="{prefix}principal/">Principal</a>
       <a href="{prefix}news/"{cls('news')}>News</a>
       <a href="{prefix}bilingual-campus/">Bilingual Campus</a>
-      <a href="https://changhua-bilingual.org/festivals/" target="_blank" rel="noopener">Festivals</a>
+      <a href="/festivals/">Festivals</a>
     </nav>
   </div>
 </div>'''
