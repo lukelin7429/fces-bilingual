@@ -152,25 +152,60 @@
     .trad, .scn{break-inside:avoid-page;page-break-inside:avoid;}
   }
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css">
+
+<style>
+.th-fest-hero{position:relative;color:#fff;overflow:hidden;min-height:240px;padding:36px 0 32px;display:flex;align-items:center;background:linear-gradient(135deg,#1F3A5F 0%,#B07D3C 100%);}
+@media (min-width:720px){ .th-fest-hero{min-height:320px;padding:56px 0 44px;} }
+.th-fest-hero::after{content:"";position:absolute;bottom:0;left:0;right:0;height:5px;background:linear-gradient(90deg,#1F3A5F 0%,#B07D3C 50%,#D89A3C 100%);pointer-events:none;z-index:2;}
+.th-fest-hero__inner{max-width:1080px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:auto 1fr;gap:32px;align-items:center;position:relative;z-index:1;}
+@media (max-width:680px){ .th-fest-hero__inner{grid-template-columns:1fr;gap:16px;} }
+.th-fest-hero__emoji{font-size:84px;line-height:1;text-align:center;flex-shrink:0;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35));}
+@media (min-width:720px){ .th-fest-hero__emoji{font-size:120px;} }
+.th-fest-hero__eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;letter-spacing:.32em;color:#D89A3C;font-weight:700;text-transform:uppercase;margin-bottom:14px;padding:5px 14px;background:rgba(0,0,0,.30);border:1px solid rgba(255,255,255,.20);border-radius:99px;}
+.th-fest-hero h1{font-family:'Playfair Display','PingFang TC',serif;font-size:clamp(32px,4.8vw,50px);font-weight:700;color:#fff;line-height:1.05;text-shadow:0 2px 6px rgba(0,0,0,.45);}
+.th-fest-hero .th-fest-hero__zh{font-size:clamp(15px,1.9vw,20px);font-weight:500;letter-spacing:.06em;color:rgba(255,255,255,.92);margin-top:8px;font-family:'PingFang TC',sans-serif;text-shadow:0 1px 3px rgba(0,0,0,.45);}
+.th-fest-hero__crumb{margin-top:14px;font-size:13.5px;color:rgba(255,255,255,.78);font-family:'PingFang TC',sans-serif;}
+.th-fest-hero__crumb a{color:#D89A3C;text-decoration:none;border-bottom:1px dashed rgba(255,255,255,.40);}
+.th-fest-hero__crumb a:hover{color:#fff;}
+</style>
+
 </head>
 <body>
-<style>
-.cb-back-strip-fallback{background:#fffcef;border-bottom:2px solid #c9c920;padding:14px 24px;display:flex;justify-content:center;align-items:center;gap:12px;font-family:'Playfair Display','PingFang TC',serif;font-size:17px;font-weight:600;flex-wrap:wrap;}
-@media (min-width:720px){.cb-back-strip-fallback{font-size:19px;padding:18px 24px;gap:16px;}}
-.cb-back-strip-fallback a{color:#2a2725;text-decoration:none;display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border-radius:99px;background:#fff;border:1.5px solid #c9c920;transition:all .15s;}
-.cb-back-strip-fallback a:hover{background:#c9c920;color:#2a2725;transform:translateX(-2px);}
-.cb-back-strip-fallback .arrow{font-size:1.2em;}
-</style>
-<div class="cb-back-strip-fallback">
-  <a href="/"><span class="arrow">←</span><span>Hub Resources</span></a>
-  <a href="/festivals/"><span class="arrow">←</span><span>All Festivals</span></a>
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="topbar-brand">
+      <img src="/photos/logo.png" alt="FengChou Elementary School logo 豐洲國小校徽">
+      <div class="topbar-name">
+        FengChou Elementary
+        <small>臺中市神岡區豐洲國民小學</small>
+      </div>
+    </div>
+    <nav class="topbar-nav">
+      <a href="/" >Home</a>
+      <a href="/principal/">Principal</a>
+      <a href="/news/">News</a>
+      <a href="/bilingual-campus/">Bilingual Campus</a>
+      <a href="/festivals/" class="is-active">Festivals</a>
+    </nav>
+  </div>
 </div>
-
-
-<header class="strip">
-  <div class="strip__no">Festival 16 · Festival English Series</div>
-  <div class="strip__topic">New Year's Day</div>
-  <div class="strip__zh">元旦 · 開一個全新的一年（1 月 1 日）</div>
+<header class="th-fest-hero">
+  <div class="th-fest-hero__inner">
+    <div class="th-fest-hero__emoji">🎆</div>
+    <div>
+      <span class="th-fest-hero__eyebrow">Festivals · 節慶英語</span>
+      <h1>New Year's Day</h1>
+      <div class="th-fest-hero__zh">元旦</div>
+      <div class="th-fest-hero__crumb">
+        <a href="/festivals/">← All Festivals · 全部節慶</a>
+        &nbsp;&middot;&nbsp; Festival 16 · Festival English Series
+      </div>
+    </div>
+  </div>
 </header>
 
 <section>
@@ -444,12 +479,6 @@
   </div>
 </section>
 
-<footer>
-  Festival English Series · 2026 Curriculum &nbsp;·&nbsp; FengChou · Bilingual Festivals &nbsp;·&nbsp;
-  <a href="../">← Festivals hub · 回節慶總覽</a> &nbsp;·&nbsp;
-  <a href="https://www.mycultureconnect.org/" target="_blank" rel="noopener">My Culture Connect 人師教育協會</a>
-</footer>
-
 <script>
 function speak(text, btn){
   if(!('speechSynthesis' in window)) return;
@@ -461,6 +490,5 @@ function speak(text, btn){
 }
 document.querySelectorAll('[data-speak]').forEach(b => { b.addEventListener('click', () => speak(b.dataset.speak, b)); });
 </script>
-<script src="../_shared/schoolbar.js"></script>
 </body>
 </html>
