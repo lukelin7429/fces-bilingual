@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>This page has moved · 頁面已搬家 — FengChou Elementary 豐洲國小</title>
+<meta name="robots" content="noindex">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{--teal:#1E5963;--teal-deep:#0F3D45;--sand:#D9A85B;--sand-deep:#9B7028;--sand-soft:#FAF4E8;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:'Inter','PingFang TC','Apple LiGothic Medium','Microsoft JhengHei',sans-serif;color:#fff;
+    min-height:100svh;display:flex;align-items:center;justify-content:center;padding:28px 20px;
+    background:
+      radial-gradient(ellipse at 16% 18%, rgba(217,168,91,.30), transparent 46%),
+      radial-gradient(ellipse at 86% 82%, rgba(46,122,120,.42), transparent 50%),
+      linear-gradient(135deg,#0a1f23 0%,#103942 52%,#1E5963 100%);
+    -webkit-font-smoothing:antialiased;text-align:center;
+  }
+  .card{
+    width:100%;max-width:560px;background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.16);border-top:5px solid var(--sand);
+    border-radius:24px;padding:46px 36px 36px;
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    box-shadow:0 30px 80px -28px rgba(0,0,0,.65);
+    animation:rise .7s cubic-bezier(.2,.7,.2,1) both;
+  }
+  @keyframes rise{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:none;}}
+  .badge{width:84px;height:84px;margin:0 auto 20px;border-radius:50%;
+    background:linear-gradient(135deg,var(--sand),#caa24f);display:flex;align-items:center;justify-content:center;font-size:40px;
+    box-shadow:0 12px 30px -10px rgba(217,168,91,.7);}
+  .eyebrow{display:inline-block;font-size:12.5px;letter-spacing:.24em;font-weight:800;text-transform:uppercase;color:#FFE7BE;margin-bottom:10px;}
+  h1{font-family:'Cormorant Garamond','PingFang TC',serif;font-size:clamp(30px,6vw,42px);font-weight:700;line-height:1.1;}
+  h1 .zh{display:block;font-family:'PingFang TC',sans-serif;font-size:clamp(17px,3.2vw,20px);font-weight:600;color:#EAF7F6;margin-top:8px;}
+  .msg{margin:18px auto 0;max-width:440px;font-size:17px;line-height:1.6;color:#f3fbfa;}
+  .msg .zh{display:block;font-size:15.5px;color:rgba(255,255,255,.78);margin-top:7px;}
+  .btn{display:inline-flex;align-items:center;gap:9px;margin-top:24px;background:#fff;color:var(--teal-deep);text-decoration:none;
+    font-size:17px;font-weight:800;padding:14px 28px;border-radius:99px;box-shadow:0 14px 30px -10px rgba(0,0,0,.55);
+    transition:transform .15s,background .15s;}
+  .btn:hover{transform:translateY(-3px);background:var(--sand-soft);}
+  .btn .z{font-weight:700;color:var(--sand-deep);}
+  .note{margin-top:16px;font-size:13.5px;color:rgba(255,255,255,.66);}
+  @media (prefers-reduced-motion: reduce){ .card{animation:none;} }
+</style>
+</head>
+<body>
+  <main class="card" role="alertdialog" aria-labelledby="t">
+    <div class="badge" aria-hidden="true">📦</div>
+    <span class="eyebrow">We've Moved · 我們搬家了</span>
+    <h1 id="t">This Page Has Moved
+      <span class="zh">這個頁面搬家了</span>
+    </h1>
+    <p class="msg">FengChou Elementary's bilingual site has a new home. We're taking you straight to this page at its new address.
+      <span class="zh">豐洲國小雙語網站已搬到新家，正帶您前往這個頁面的新網址。</span>
+    </p>
+    <a class="btn" id="goBtn" href="https://taiwan-bilingual.org/taichung/fces/">
+      Continue <span aria-hidden="true">→</span> <span class="z">繼續前往</span>
+    </a>
+    <p class="note">If you're not redirected, tap the button above. · 若未自動跳轉，請點上方按鈕。</p>
+  </main>
+
+<script>
+  (function(){
+    var NEW_BASE = 'https://taiwan-bilingual.org/taichung/fces';
+    var path = location.pathname || '/';
+    if (path === '/404.html') path = '/';
+    var dest = NEW_BASE + path + location.search + location.hash;
+    document.getElementById('goBtn').href = dest;
+    setTimeout(function(){ location.replace(dest); }, 1600);
+  })();
+</script>
+</body>
+</html>

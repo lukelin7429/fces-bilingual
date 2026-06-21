@@ -2,361 +2,176 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FengChou Elementary School · 臺中市神岡區豐洲國民小學</title>
-<meta name="description" content="FengChou Elementary School — a hundred-year village school (est. 1922) in Shengang, Taichung, and a national tug-of-war champion. An immersive-English & bilingual school. 臺中市神岡區豐洲國民小學 — 創校於民國 11 年（1922）的百年老校，沉浸式英語特色學校，全國拔河冠軍。">
-<meta property="og:title" content="FengChou Elementary School · 臺中市神岡區豐洲國民小學">
-<meta property="og:description" content="A hundred-year village school in Shengang, Taichung · 台中神岡的百年小學">
-<meta property="og:type" content="website">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>We've Moved · 我們搬家了 — FengChou Elementary 豐洲國小</title>
+<meta name="description" content="FengChou Elementary's bilingual site has moved to taiwan-bilingual.org/taichung/fces. 豐洲國小雙語網站已搬到新家。">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://taiwan-bilingual.org/taichung/fces/">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --teal:#1E5963;--teal-deep:#0F3D45;--teal-soft:#E5F1F2;
+    --sand:#D9A85B;--sand-deep:#9B7028;--sand-soft:#FAF4E8;
+    --ink:#1f1a16;--ink-soft:#5e5750;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;}
+  body{
+    font-family:'Inter','PingFang TC','Apple LiGothic Medium','Microsoft JhengHei',sans-serif;
+    color:#fff;min-height:100svh;
+    display:flex;align-items:center;justify-content:center;padding:28px 20px;
+    background:
+      radial-gradient(ellipse at 16% 18%, rgba(217,168,91,.30), transparent 46%),
+      radial-gradient(ellipse at 86% 82%, rgba(46,122,120,.42), transparent 50%),
+      linear-gradient(135deg,#0a1f23 0%,#103942 52%,#1E5963 100%);
+    -webkit-font-smoothing:antialiased;overflow:hidden;position:relative;
+  }
+  /* floating orbs */
+  .orb{position:fixed;border-radius:50%;filter:blur(2px);opacity:.5;pointer-events:none;animation:float 13s ease-in-out infinite;}
+  .orb.a{width:160px;height:160px;left:6%;top:16%;background:radial-gradient(circle at 35% 35%,rgba(217,168,91,.6),transparent 70%);}
+  .orb.b{width:230px;height:230px;right:4%;bottom:8%;background:radial-gradient(circle at 35% 35%,rgba(229,241,242,.45),transparent 70%);animation-delay:-5s;}
+  .orb.c{width:90px;height:90px;right:24%;top:12%;background:radial-gradient(circle at 35% 35%,rgba(217,168,91,.5),transparent 70%);animation-delay:-9s;}
+  @keyframes float{0%,100%{transform:translateY(0) translateX(0);}50%{transform:translateY(-26px) translateX(12px);}}
+
+  .card{
+    position:relative;z-index:2;width:100%;max-width:600px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:26px;padding:48px 40px 38px;text-align:center;
+    backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+    box-shadow:0 30px 80px -28px rgba(0,0,0,.65);
+    border-top:5px solid var(--sand);
+    animation:rise .8s cubic-bezier(.2,.7,.2,1) both;
+  }
+  @keyframes rise{from{opacity:0;transform:translateY(26px) scale(.98);}to{opacity:1;transform:none;}}
+  @media(max-width:520px){ .card{padding:38px 24px 30px;border-radius:22px;} }
+
+  .badge{
+    width:96px;height:96px;margin:0 auto 22px;border-radius:50%;
+    background:linear-gradient(135deg,var(--sand) 0%,#caa24f 100%);
+    display:flex;align-items:center;justify-content:center;font-size:46px;
+    box-shadow:0 14px 34px -10px rgba(217,168,91,.7),inset 0 2px 6px rgba(255,255,255,.4);
+    animation:bob 2.6s ease-in-out infinite;
+  }
+  @keyframes bob{0%,100%{transform:translateY(0) rotate(-4deg);}50%{transform:translateY(-9px) rotate(4deg);}}
+
+  .eyebrow{
+    display:inline-block;font-size:13px;letter-spacing:.26em;font-weight:800;text-transform:uppercase;
+    color:#FFE7BE;margin-bottom:12px;
+  }
+  h1{
+    font-family:'Cormorant Garamond','PingFang TC',serif;
+    font-size:clamp(34px,7vw,48px);font-weight:700;line-height:1.08;
+    text-shadow:0 2px 10px rgba(0,0,0,.4);
+  }
+  h1 .zh{display:block;font-family:'PingFang TC',sans-serif;font-size:clamp(18px,3.4vw,22px);font-weight:600;color:#EAF7F6;margin-top:10px;letter-spacing:.04em;}
+  .school{margin-top:14px;font-size:16px;color:rgba(255,255,255,.82);font-weight:600;letter-spacing:.02em;}
+
+  .msg{margin:22px auto 0;max-width:460px;font-size:18px;line-height:1.6;color:#f3fbfa;}
+  .msg .zh{display:block;font-size:16px;color:rgba(255,255,255,.78);margin-top:8px;}
+
+  /* address change */
+  .addr{
+    margin:26px auto 4px;max-width:460px;
+    background:rgba(10,31,35,.34);border:1px solid rgba(255,255,255,.14);
+    border-radius:16px;padding:18px 20px;
+  }
+  .addr .old{font-size:15px;color:rgba(255,255,255,.55);text-decoration:line-through;text-decoration-color:rgba(224,56,58,.7);word-break:break-all;}
+  .addr .arrow{font-size:20px;color:var(--sand);margin:6px 0;line-height:1;}
+  .addr .new{font-size:clamp(16px,3.6vw,20px);font-weight:800;color:#fff;word-break:break-all;letter-spacing:.01em;}
+  .addr .new b{color:#FFE7BE;}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;margin-top:26px;
+    background:#fff;color:var(--teal-deep);text-decoration:none;
+    font-size:18px;font-weight:800;letter-spacing:.01em;
+    padding:15px 30px;border-radius:99px;
+    box-shadow:0 14px 30px -10px rgba(0,0,0,.55);
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .btn:hover{transform:translateY(-3px);background:var(--sand-soft);box-shadow:0 18px 38px -12px rgba(0,0,0,.6);}
+  .btn:active{transform:scale(.97);}
+  .btn .go{transition:transform .2s;}
+  .btn:hover .go{transform:translateX(4px);}
+
+  .count{margin-top:20px;font-size:14px;color:rgba(255,255,255,.72);letter-spacing:.02em;}
+  .count b{color:#FFE7BE;font-variant-numeric:tabular-nums;}
+  .bar{margin:12px auto 0;max-width:300px;height:5px;border-radius:99px;background:rgba(255,255,255,.16);overflow:hidden;}
+  .bar > i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--sand),#FFE7BE);transform-origin:left;animation:drain 9s linear forwards;}
+  @keyframes drain{from{transform:scaleX(1);}to{transform:scaleX(0);}}
+
+  footer{position:relative;z-index:2;margin-top:24px;text-align:center;font-size:13px;color:rgba(255,255,255,.6);line-height:1.6;}
+  footer a{color:#FFE7BE;text-decoration:none;border-bottom:1px solid rgba(255,231,190,.4);}
+
+  @media (prefers-reduced-motion: reduce){
+    .orb,.badge,.card{animation:none!important;}
+    .bar > i{animation:none;}
+  }
+</style>
 </head>
 <body>
+  <div class="orb a"></div><div class="orb b"></div><div class="orb c"></div>
 
+  <div>
+    <main class="card" role="alertdialog" aria-labelledby="moved-title">
+      <div class="badge" aria-hidden="true">🧳</div>
+      <span class="eyebrow">We've Moved · 我們搬家了</span>
+      <h1 id="moved-title">A New Home for Our School
+        <span class="zh">豐洲國小有了新的網址</span>
+      </h1>
+      <div class="school">FengChou Elementary · 臺中市神岡區豐洲國民小學</div>
 
-<!-- ============ TOPBAR ============ -->
-<div class="topbar">
-  <div class="wrap topbar-inner">
-    <div class="topbar-brand">
-      <img src="photos/logo.png" alt="FengChou Elementary School logo 豐洲國小校徽">
-      <div class="topbar-name">
-        FengChou Elementary
-        <small>臺中市神岡區豐洲國民小學</small>
-      </div>
-    </div>
-    <nav class="topbar-nav">
-      <a href="" class="is-active">Home</a>
-      <a href="principal/">Principal</a>
-      <a href="news/">News</a>
-      <a href="bilingual-campus/">Bilingual Campus</a>
-      <a href="/festivals/">Festivals</a>
-    </nav>
-  </div>
-</div>
+      <p class="msg">Our bilingual website has moved to a new address on the Taiwan Bilingual hub. Please update your bookmarks.
+        <span class="zh">我們的雙語網站已搬到「臺灣雙語資源網」的新家，請更新您的書籤。</span>
+      </p>
 
-
-<!-- ============ HERO ============ -->
-<header class="title">
-  <div class="wrap">
-    <span class="title__eyebrow">Shengang District · Taichung · Est. 1922</span>
-    <h1>FengChou Elementary School
-      <div class="h1-zh">臺中市神岡區豐洲國民小學</div>
-    </h1>
-    <hr class="title__divider">
-    <p class="title__tagline">
-      A hundred-year village school — where a single rope pulls a whole town together.
-      <span class="tagline-zh">一所百年的村落小學——一條繩子，把整個社區的心拉在一起。</span>
-    </p>
-  </div>
-</header>
-
-
-<!-- ============ ABOUT ============ -->
-<section class="about" id="about">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">About Our School</div>
-      <h2>A Century on the Same Ground</h2>
-      <div class="h2-zh">在同一片土地上，走過一百年</div>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-text">
-        <h3>From one classroom in 1922 to a school the whole district knows.</h3>
-        <p class="en">We began in <strong>1922</strong> as a single branch classroom of the old Anli Public School, out on the Xiazhou flats of Shengang. Twelve years later we became a school of our own &mdash; <strong>FengChou</strong> &mdash; and we have taught the children of this farming district ever since: through the Japanese era, through the founding of a republic, through a hundred years of harvests.</p>
-        <p class="en">Today FengChou is a <strong>century-old village school</strong> that still believes a small school can do big things &mdash; from a <strong>national-champion tug-of-war team</strong> to an <strong>immersive-English programme</strong> with its own foreign teacher. We are healthy, we pull together, and we keep reaching forward.</p>
-
-        <div class="zh-divider"></div>
-        <div class="zh">
-          <p>我們在 <strong>民國 11 年（1922）</strong> 創校，最初只是「岸裡公學校下溪洲分教場」的一間教室，座落在神岡的溪洲平原上。十二年後我們獨立設校，成為「<strong>豐洲</strong>」——從此教著這個農業聚落的孩子：走過日治、走過共和國的誕生、走過一百年的收成。</p>
-          <p>今天的豐洲，是一所仍然相信「小學校也能做大事」的<strong>百年老校</strong>——從<strong>全國冠軍的拔河隊</strong>，到擁有專屬外師的<strong>沉浸式英語課程</strong>。我們健康、我們合群、我們不斷向前。</p>
-        </div>
+      <div class="addr" aria-label="New address">
+        <div class="old">fces.taiwan-bilingual.org</div>
+        <div class="arrow" aria-hidden="true">↓</div>
+        <div class="new">taiwan-bilingual.org/<b>taichung/fces</b></div>
       </div>
 
-      <aside class="lineage" aria-label="FengChou school timeline">
-        <div class="lineage__label">School Timeline · 校史時間軸</div>
+      <a class="btn" id="goBtn" href="https://taiwan-bilingual.org/taichung/fces/">
+        Go to our new site <span class="go" aria-hidden="true">→</span>
+        <span style="font-weight:700;color:var(--sand-deep)">立即前往</span>
+      </a>
 
-        <div class="lineage__trunk">
-          <div class="name">A branch classroom</div>
-          <div class="name-zh">岸裡公學校下溪洲分教場</div>
-          <div class="year">EST. 1922 · 創立分教場</div>
-        </div>
+      <p class="count">Taking you there in <b id="secs">9</b> seconds… · <span id="secsZh">9</span> 秒後自動前往</p>
+      <div class="bar" aria-hidden="true"><i></i></div>
+    </main>
 
-        <div class="lineage__arrow">↓</div>
-
-        <div class="lineage__seed">
-          <div class="name">FengChou School</div>
-          <div class="name-zh">豐洲公學校（獨立設校）</div>
-          <div class="year">1934 · 獨立為一所學校</div>
-        </div>
-
-        <div class="lineage__arrow">↓</div>
-
-        <div class="lineage__branch-step">
-          <div class="step-label">2019 · 108 學年</div>
-          <div class="step-text">Immersive-English special school<br><small>沉浸式英語教學特色學校</small></div>
-        </div>
-
-        <div class="lineage__arrow">↓</div>
-
-        <div class="lineage__branch-step">
-          <div class="step-label">2025 · 114 年</div>
-          <div class="step-text">National tug-of-war champions<br><small>全國拔河錦標賽冠軍</small></div>
-        </div>
-
-        <p class="lineage__caption">
-          A hundred years, one ground, and a rope held by many hands.
-          <span class="zh">一百年、一片土地，和一條由許多雙手一起握住的繩子。</span>
-        </p>
-      </aside>
-    </div>
+    <footer>
+      Bilingual site by <a href="https://www.mycultureconnect.org/" target="_blank" rel="noopener">My Culture Connect 人師教育協會</a> · provided free of charge
+    </footer>
   </div>
-</section>
 
+<script>
+  (function(){
+    var NEW_BASE = 'https://taiwan-bilingual.org/taichung/fces';
+    // preserve any sub-path the visitor may have landed on (root -> "/")
+    var path = location.pathname || '/';
+    if (path === '/index.html') path = '/';
+    var dest = NEW_BASE + path + location.search + location.hash;
+    var btn = document.getElementById('goBtn');
+    btn.href = dest;
 
-<!-- ============ IDENTITY — 培育目標 健康・合群・進取 ============ -->
-<section class="identity" id="identity">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Our Goal for Every Child</div>
-      <h2>Healthy · Together · Aspiring</h2>
-      <div class="h2-zh">健康・合群・進取 — 豐洲想養成的孩子</div>
-    </div>
-
-    <div class="pillars">
-      <article class="pillar">
-        <div class="icon">🏃</div>
-        <h3>Healthy
-          <small>健康 · 動起來的身體</small>
-        </h3>
-        <p class="en-body">A strong body comes first. FengChou children move &mdash; on the track, on the tug-of-war mat, and at the table-tennis table. For more than ten years, <strong>tug of war</strong> and <strong>war drums</strong> have been the heartbeat of this school.</p>
-        <div class="divider-tiny"></div>
-        <p class="zh-body">先有健康的身體。豐洲的孩子動起來——在跑道上、在拔河墊上、在桌球桌前。十多年來，<strong>拔河</strong>與<strong>戰鼓</strong>一直是這所學校的心跳。</p>
-      </article>
-
-      <article class="pillar">
-        <div class="icon">🤝</div>
-        <h3>Together
-          <small>合群 · 一起用力</small>
-        </h3>
-        <p class="en-body">No one wins a tug of war alone. Our signature sport teaches what FengChou values most: <strong>pull together, in the same direction, at the same moment</strong>. It is a lesson that leaves the mat and follows children into every classroom.</p>
-        <div class="divider-tiny"></div>
-        <p class="zh-body">沒有人能獨自贏得一場拔河。我們的招牌運動，教的正是豐洲最看重的事：<strong>朝同一個方向、在同一個時刻、一起用力</strong>。這堂課會走下拔河墊，跟著孩子走進每一間教室。</p>
-      </article>
-
-      <article class="pillar">
-        <div class="icon">🌱</div>
-        <h3>Aspiring
-          <small>進取 · 向世界伸手</small>
-        </h3>
-        <p class="en-body">A village school can still reach the world. FengChou is an <strong>immersive-English special school</strong> with its own foreign teacher, weaving English into art, daily life, and announcements &mdash; so our children grow up reaching forward, in two languages.</p>
-        <div class="divider-tiny"></div>
-        <p class="zh-body">村落小學，也能向世界伸手。豐洲是擁有專屬外師的<strong>沉浸式英語特色學校</strong>，把英語織進藝術課、校園日常與廣播裡——讓孩子用兩種語言，一起向前。</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============ SIGNATURE — TUG OF WAR ============ -->
-<section class="signature" id="tugofwar">
-  <div class="wrap">
-    <span class="sig-eyebrow">Our Signature · 拔河</span>
-    <h2>One Rope, One Town, One Champion
-      <span class="zh">一條繩、一個社區、一支冠軍隊</span>
-    </h2>
-    <p class="sig-lead">Tug of war is who we are. FengChou&rsquo;s teams have carried this small village school&rsquo;s name to the top of Taichung &mdash; and all the way to a national title. &ldquo;One rope, soul and all&rdquo; is more than a slogan here; it is how we teach children to win, and to lose, together.</p>
-    <p class="sig-lead-zh">拔河就是我們。豐洲的隊伍把這所小村校的名字，拉上了台中之巔——也一路拉到了全國冠軍。「一繩入魂」在這裡不只是口號，而是我們教孩子如何一起贏、一起輸的方式。</p>
-
-    <div class="trophies">
-      <div class="trophy">
-        <div class="yr">2025 · National</div>
-        <div class="ttl">Double National Champions
-          <span class="zh">花蓮太平洋盃全國拔河賽 — 男・女生組雙料冠軍</span>
-        </div>
-      </div>
-      <div class="trophy">
-        <div class="yr">2025 · Taichung City</div>
-        <div class="ttl">Triple City Champions
-          <span class="zh">臺中市議長盃 — 男甲・女甲・混合甲 三冠王</span>
-        </div>
-      </div>
-      <div class="trophy">
-        <div class="yr">10+ years</div>
-        <div class="ttl">A Decade of Drums &amp; Rope
-          <span class="zh">戰鼓與拔河 — 深耕逾十年的學校特色</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============ PRINCIPAL ============ -->
-<section class="principal" id="principal">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">A Word from Our Principal</div>
-      <h2>The Lamplighter</h2>
-      <div class="h2-zh">提燈者 — 黃保勝校長</div>
-    </div>
-
-    <div class="principal-card">
-      <div class="principal-photo">
-        <img src="photos/principal-portrait.jpg" alt="Principal Huang Pao-sheng · 黃保勝校長">
-      </div>
-      <div class="principal-text">
-        <div class="role">Principal · 校長</div>
-        <h3>Huang Pao-sheng
-          <small>黃保勝 校長</small>
-        </h3>
-        <p class="since">15th Principal · Appointed August 2023 · 民國 112 年 8 月就任第十五任</p>
-        <blockquote>
-          A teacher is a lamplighter &mdash; we light the flame of learning, and let it shine on a child&rsquo;s future.
-        </blockquote>
-        <div class="zh-quote">
-          身為教育人，就如「提燈者」——點燃教育的熱情，照亮孩子的未來。
-        </div>
-        <a class="principal-cta" href="principal/">Enter the Principal&rsquo;s Office · 進入校長室 →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============ STUDENT LIFE ============ -->
-<section class="life" id="life">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Student Life</div>
-      <h2>What a Year Looks Like Here</h2>
-      <div class="h2-zh">在豐洲，一年是什麼模樣</div>
-    </div>
-
-    <div class="life-grid">
-      <article class="life-card">
-        <div class="life-card__img"><img src="photos/life-tugofwar.jpg" alt="FengChou tug-of-war team competing"></div>
-        <div class="life-card__body">
-          <span class="tag">Athletics · 體育</span>
-          <h3>Pulling for the Win<small>把校名拉上頒獎台</small></h3>
-          <p class="en-text">Our tug-of-war team trains hard and wins big &mdash; city titles and national titles alike. It is the proudest sound on our campus: a whole team breathing, and pulling, as one.</p>
-          <p class="zh-text">我們的拔河隊苦練、也大贏——市冠軍、全國冠軍一個接一個。那是校園裡最驕傲的聲音：整支隊伍像一個人一樣，一起呼吸、一起用力。</p>
-        </div>
-      </article>
-
-      <article class="life-card">
-        <div class="life-card__img"><img src="photos/life-food.jpg" alt="First graders making scallion omelette in food-and-farming class"></div>
-        <div class="life-card__body">
-          <span class="tag">Hands-on Learning · 食農教育</span>
-          <h3>From Soil to Plate<small>從泥土到餐桌</small></h3>
-          <p class="en-text">In food-and-farming class our youngest children grow, pick, and cook &mdash; turning their own scallions into a hot omelette. Learning, at FengChou, is something you can taste.</p>
-          <p class="zh-text">在食農教育課裡，最小的孩子親手種、親手摘、親手煮——把自己種的蔥，變成一盤熱騰騰的蔥蛋。在豐洲，學習是嚐得到味道的。</p>
-        </div>
-      </article>
-
-      <article class="life-card">
-        <div class="life-card__img"><img src="photos/life-childrens.jpg" alt="Children's Day games and flea market at FengChou"></div>
-        <div class="life-card__body">
-          <span class="tag">Celebration · 節慶</span>
-          <h3>A Day Just for Children<small>專屬孩子的一天</small></h3>
-          <p class="en-text">On Children&rsquo;s Day the whole school turns into a playground of games, talent shows, and a student flea market &mdash; laughter in every corner of the campus.</p>
-          <p class="zh-text">兒童節這天，整座校園變成遊戲場——闖關遊戲、才藝表演、學生跳蚤市場，每個角落都是笑聲。</p>
-        </div>
-      </article>
-
-      <article class="life-card">
-        <div class="life-card__img"><img src="photos/life-reading.jpg" alt="FengChou's tree-shaped reading library"></div>
-        <div class="life-card__body">
-          <span class="tag">Reading · 閱讀</span>
-          <h3>Reading Under the Tree<small>在「樹」下閱讀</small></h3>
-          <p class="en-text">At the heart of our library stands a tree-shaped reading nook. Around it, big people come in to tell stories, and children grow a reading habit that lasts a lifetime.</p>
-          <p class="zh-text">我們圖書室的中央，立著一棵「樹」形的閱讀角。在它周圍，大人物進來說故事，孩子養成一生受用的閱讀習慣。</p>
-        </div>
-      </article>
-    </div>
-
-    <div class="life-cta">
-      <a href="news/" class="life-cta-link">See more school stories · 看更多校園故事 →</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============ PHOTO BAND ============ -->
-<section style="background:linear-gradient(180deg,#fff 0%,var(--blue-soft) 100%);padding:74px 0 88px;">
-  <div class="wrap">
-    <div class="section-head" style="margin-bottom:40px;">
-      <div class="eyebrow">In Pictures</div>
-      <h2>Around the Campus</h2>
-      <div class="h2-zh">校園剪影</div>
-    </div>
-    <div class="photo-band">
-      <figure class="pband">
-        <img src="photos/band-library.jpg" alt="FengChou library reading room">
-        <figcaption class="cap">Our Library<span class="zh">圖書室</span></figcaption>
-      </figure>
-      <figure class="pband">
-        <img src="photos/band-sculpture.jpg" alt="Campus garden sculpture">
-        <figcaption class="cap">The Campus Garden<span class="zh">校園地景</span></figcaption>
-      </figure>
-      <figure class="pband">
-        <img src="photos/band-pavilion.jpg" alt="Traditional pavilion on campus">
-        <figcaption class="cap">The Pavilion<span class="zh">校園涼亭</span></figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============ VISIT ============ -->
-<section class="visit" id="visit">
-  <div class="wrap">
-    <div class="visit-grid">
-      <div>
-        <h2>Come Visit
-          <small>歡迎蒞校交流</small>
-        </h2>
-        <p>We welcome teachers, parents, and friends &mdash; from across Taichung, from all of Taiwan, and from anywhere in the world &mdash; to walk our century-old campus and watch our children pull, read, and grow.</p>
-        <p class="zh">歡迎台中各地、全台灣、以及世界各地的教育工作者、家長與朋友——走進我們百年的校園，看我們的孩子拔河、閱讀、長大。</p>
-      </div>
-
-      <div class="contact">
-        <dl>
-          <div>
-            <dt>Address · 學校地址</dt>
-            <dd>429 臺中市神岡區豐洲路 482 號<br>
-            No. 482, Fengzhou Rd., Shengang Dist., Taichung City 429, Taiwan</dd>
-          </div>
-          <div>
-            <dt>Phone · 電話</dt>
-            <dd><a href="tel:+886425223351">04-2522-3351</a> &nbsp;·&nbsp; Fax 04-2520-0674</dd>
-          </div>
-          <div>
-            <dt>Website · 學校官網</dt>
-            <dd><a href="https://pjes.tc.edu.tw/" target="_blank" rel="noopener">pjes.tc.edu.tw</a></dd>
-          </div>
-        </dl>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ============ FOOTER ============ -->
-<footer>
-  <div class="wrap">
-    <div>© 2026 臺中市神岡區豐洲國民小學 · FengChou Elementary School</div>
-    <div class="partner">Bilingual page by <a href="https://www.mycultureconnect.org/" target="_blank" rel="noopener">My Culture Connect 人師教育協會</a> &middot; provided free of charge</div>
-  </div>
-</footer>
-
-<script src="assets/js/site.js"></script>
+    var n = 9;
+    var secs = document.getElementById('secs');
+    var secsZh = document.getElementById('secsZh');
+    var t = setInterval(function(){
+      n--;
+      if (secs) secs.textContent = n;
+      if (secsZh) secsZh.textContent = n;
+      if (n <= 0){ clearInterval(t); location.replace(dest); }
+    }, 1000);
+  })();
+</script>
 </body>
 </html>
